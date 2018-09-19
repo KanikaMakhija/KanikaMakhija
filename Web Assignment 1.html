@@ -7,21 +7,30 @@
 </head>
 <style>
 .my-container { width: 500px; margin-left: auto; margin-right: auto; border: none; } 
-         .h1-header { font-family: 'Segoe UI'; font-size: 1.650em; color: #777777; font-weight: normal; padding: 0px 15px 10px 15px; text-align: center; }
-         .header { font-family: 'Segoe UI'; font-size: 1.125em; color: #777777; font-weight: normal; padding: 0px 15px; text-align: center; border: none; }
+         .h1-header { font-family: 'Arial'; font-size: 1.70em; color: #777777; font-weight: normal; padding: 0px 15px 15px 15px; text-align: center; }
+         .header { font-family: 'Arial'; font-size: 1.130em; color: #777777; font-weight: normal; padding: 0px 15px; text-align: center; border: none; }
          .color-gray { color: #7a7a7a; }
-         .padding-left-and-right-five-px { padding-left: 5px; padding-right: 5px; }
-         .social-security-question { font-family: 'Segoe UI'; font-size: 1.286em !important; color: #777777; font-weight: normal; padding: 0px 5px; text-align: center; }
+         .padding-left-and-right-five-px { padding-left: 6px; padding-right: 5px; }
+         .social-security-question { font-family: 'Arial'; font-size: 1.300em !important; color: #777777; font-weight: normal; padding: 0px 6px; text-align: center; }
          .center-text { text-align: center; margin-top: 10px;}
-         #SSNArea { font-weight: normal; font-family: 'Segoe UI'; font-size: 20px; text-align: center; width: 130px; min-width: 85px; display: inline; }
-         #SSNGroup { font-weight: normal; font-family: 'Segoe UI'; font-size: 20px; text-align: center; width: 125px; min-width: 65px; display: inline; }
-         #SSNSerial { font-weight: normal; font-family: 'Segoe UI'; font-size: 20px; text-align: center; width: 130px; min-width: 85px; display: inline; }
+         #SSNArea { font-weight: normal; font-family: 'Arial'; font-size: 20px; text-align: center; width: 135px; min-width: 90px; display: inline; }
+         #SSNGroup { font-weight: normal; font-family: 'Arial'; font-size: 20px; text-align: center; width: 130px; min-width: 70px; display: inline; }
+         #SSNSerial { font-weight: normal; font-family: 'Arial'; font-size: 20px; text-align: center; width: 135px; min-width: 909px; display: inline; }
          input#SSNGroup, input#SSNArea, input#SSNSerial {
               border: 1px solid black;
               height: 30px;
           }
 
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 10px
+}
 
+th, td{
+    padding: 5px;
+    text-align: center;
+}
 </style>
 <body> 
     <header>                          
@@ -35,19 +44,19 @@
 
            <ol>
                
-             <li> <b> NAME </b><br> <sub>(To be shown on Card) &emsp;&emsp;&emsp;&emsp;
-                &nbsp;
+             <li> <b> NAME </b><br> <sub>(To be shown on Card) &emsp;&emsp;
                 
-                        
+                    <sup> First</sup>    
                        
-                 <input type ="text" name "First" style ="font-size:15px" /> &nbsp
+                 <input type ="text" name "First" style ="font-size:15px" /> &emsp;&nbsp;
                             <sup> Full Middle Name </sup>
                             &nbsp;
             
-                 <input type ="text" name "full middle name" style ="font-size:15px"/>  &nbsp
+                 <input type ="text" name "full middle name" style ="font-size:15px"/>
+                 &emsp;
                           <sup>  Last Name </sup> 
                           &nbsp;
-                        
+                 &emsp;       
                 <input type = "text" name "Last Name" style ="font-size:15px"/> </b> </li>
             </sub></br>  
            
@@ -55,22 +64,23 @@
     
           <br>  </br>
    FULL NAME AT BIRTH &emsp;
-    <input type ="text" name "Full Name at Birth" style ="font-size:15px"/>
+    <input type ="text" name ="Full Name at Birth" style ="font-size:15px"/>
     
     <sup> &emsp;First </sup>
             
-    <input type ="text" name "First" style ="font-size:15px"/> &nbsp;
+   &emsp; <input type ="text" name= "First" style ="font-size:15px"/> &nbsp;
                 <sup> &emsp;&emsp;Full Middle Name </sup>
                 
-
-     <input type ="text" name "full middle name" style ="font-size:15px"/>
+&emsp;
+     <input type ="text" name ="full middle name" style ="font-size:15px"/> &emsp;
               <sup> &emsp;Last Name </sup> 
               
-              
-    <input type = "text" name "Last Name" style ="font-size:15px"/>
+      &emsp;        
+    <input type = "text" name ="Last Name" style ="font-size:15px"/>
+    &emsp;
           <br>  </br>
-    <sup>OTHER NAMES</sup> &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
-    <input type ="text" name "Other Names" style ="font-size:15px"/>
+    OTHER NAMES USED &emsp; &nbsp
+    <input type ="text" name ="Other Names" style ="font-size:15px"/>
 <hr>
     
             <li>Social Security Number previously assigned to the person <br> listed in item 1</br></li>
@@ -92,9 +102,9 @@
         <div>
             <li> <b> PLACE OF BIRTH &emsp;<input type ="text" id="name" name ="name" placeholder="Full Middle Name" style ="font-size:15px"><br>(Do not abbreviate) </b> </br>  
            <hr> 
-                <li> <b> DATE OF BIRTH </b> &emsp; </li> </b>
+                <li> <b> DATE OF BIRTH </b> &emsp; &nbsp;<input type ="date" name ="date" style ="font-size:15px"></li> </li> </b>
                 
-                <input type ="date" name ="date" style ="font-size:15px"></li>
+                
             
             </b>
            
@@ -107,9 +117,9 @@
                   <label for ="Legal Alien Allowed To Work"> Legal Alien Allowed To Work </label>
                   &nbsp; &nbsp; &nbsp;
                   <input type ="radio" id ="Legal Alien Not allowed to work" name ="Citizenship" value ="Legal Alien <b> Not </b> allowed to work"/>
-                  <label for "Legal Alien Not allowed to work"> Legal Alien <b> Not </b> allowed to work(See instructions on page 3)</label>
+                  <label for = "Legal Alien Not allowed to work"> Legal Alien <b> Not </b> allowed to work(See instructions on page 3)</label>
                 &nbsp; &nbsp; &nbsp;
-                  <input type="radio" id="Other" name"Citizenship" value ="Other"/>
+                  <input type="radio" id="Other" name ="Citizenship" value ="Other"/>
                 <label for ="Other"> Other (See instructions on page 3) </label>
               </li>
               <hr>
@@ -126,35 +136,35 @@
                 <hr>
                  <li> <b> RACE</b> 
                 
-                    &emsp; &emsp;<input type="radio" id ="race" name="Male" value ="Male"/>
-                    <label for ="Male"> Native Hawaiian </label> &nbsp
-
-                    &emsp; &emsp;<input type="radio" id ="race" name="Male" value ="Male"/>
-                    <label for ="Male"> Alaska Native </label> &nbsp
-
-                    &emsp; &emsp;<input type="radio" id ="race" name="Male" value ="Male"/>
-                    <label for ="Male"> Asian </label> &nbsp 
-                    <br> </br>
-
-                    &emsp; &emsp;&emsp; &emsp;&ensp;<input type="radio" id ="race" name="Male" value ="Male"/>
-                    <label for ="Male"> American Indian</label> &nbsp
-
-                    &emsp; &emsp;<input type="radio" id ="race" name="Male" value ="Male"/>
-                    <label for ="Male"> Black/African American</label> &nbsp
-
-                    &emsp; <input type="radio" id ="race" name="Male" value ="Male"/>
-                    <label for ="Male"> Other Pacific Islander </label> &nbsp
+                    &emsp;<input type="radio" id ="race" name="Male" value ="Male"/>
+                    <label for ="Male"> Native Hawaiian </label> 
 
                     &emsp;<input type="radio" id ="race" name="Male" value ="Male"/>
-                    <label for ="Male"> White </label> &nbsp
+                    <label for ="Male"> Alaska Native </label> 
+
+                    &emsp; &emsp;<input type="radio" id ="race" name="Male" value ="Male"/>
+                    <label for ="Male"> Asian </label> 
+                    <br> </br>
+
+                    &emsp; &emsp;&emsp;&ensp; &nbsp;<input type="radio" id ="race" name="Male" value ="Male"/>
+                    <label for ="Male"> American Indian</label> 
+
+                    &emsp;<input type="radio" id ="race" name="Male" value ="Male"/>
+                    <label for ="Male"> Black/African American</label>
+
+                    &emsp; <input type="radio" id ="race" name="Male" value ="Male"/>
+                    <label for ="Male"> Other Pacific Islander </label>
+
+                    &emsp; &ensp;<input type="radio" id ="race" name="Male" value ="Male"/>
+                    <label for ="Male"> White </label>
                 
                 
                 
                 </li>
                  <hr>
-                 <li> <b>SEX  &emsp; &emsp; </b> &nbsp 
+                 <li> <b>SEX  &emsp; &emsp; </b> 
                     <input type="radio" id ="Male" name="Male" value ="Male"/>
-                    <label for ="Male"> Male </label> &nbsp
+                    <label for ="Male"> Male </label> 
                     &emsp; &emsp; &emsp;&emsp;&emsp; &emsp;
                     <input type ="radio" id="Male" name ="Male" value ="Female"/>
                     <label for ="Female"> Female </label> 
@@ -227,12 +237,12 @@
                      <li> Has the person listed in item 1 or anyone acting on his/her behalf ever filed for or received a Social Security Number <br> Card before? </br>
                         
                         <input type ="radio" id="person" name ="Yes" value ="yes"/>
-                        <label for ="Yes"> Yes (if "yes" answer question 12-13) </label> &nbsp
+                        <label for ="Yes"> Yes (if "yes" answer question 12-13) </label>
 
-                        <input type ="radio" id ="person" name ="yes" value ="no"/>
-                        <label for ="yes"> No </label> &nbsp
+                        <input type ="radio" id ="person" name ="Yes" value ="no"/>
+                        <label for ="yes"> No </label> 
 
-                        <input type ="radio" id ="person" name ="yes" value ="don't know" checked/>
+                        <input type ="radio" id ="person" name ="Yes" value ="don't know" checked/>
                         <label for ="yes"> Don't Know (If  "Don't know",skip to question 14) </label>
                      
                      </li>
@@ -264,10 +274,10 @@
                             <input type ="text" id="phone" name ="phone" placeholder="Number"style ="font-size:15px">
                             <br> <b> NUMBER </b> </br> </li>
                         <hr>
-                        <li> <b> MAILING ADDRESS &emsp;&emsp;&emsp;&emsp;&emsp;
+                        <li> <b> MAILING ADDRESS &emsp;&emsp;&emsp;
                                 <input type ="text" id="Street Address, Apt. No., PO Box, Rural Route No" name ="Street Address, Apt. No., PO Box, Rural Route No" placeholder="Street Address, Apt. No., PO Box, Rural Route No" style ="font-size:15px">
                                 &emsp;&emsp;&emsp;&emsp;&emsp;
-                                <input type ="text" id="State" name ="State" placeholder="state" style ="font-size:15px">
+                                <input type ="text" id="State" name ="State" placeholder="State" style ="font-size:15px">
                                 &emsp;&emsp;&emsp;&emsp;&emsp;
                                 <input type ="text" id="City" name ="City" placeholder="City" style ="font-size:15px">
                                 &emsp;&emsp;&emsp;&emsp;&emsp;
@@ -290,40 +300,57 @@
                         <input type ="radio" id ="relationship" name ="Self" value ="Self"/>
                         <label for ="Self"> Self </label>
                         &emsp;&emsp;&emsp;
-                        <input type ="radio" id ="relationship" name ="Don't Know" value ="don't know"/>
+                        <input type ="radio" id ="relationship" name ="Self" value ="don't know"/>
                         <label for ="don't know"> Natural or adoptive parent </label>
                         &emsp;&emsp;&emsp;
-                        <input type ="radio" id ="relationship" name ="Don't Know" value ="don't know"/>
+                        <input type ="radio" id ="relationship" name ="Self" value ="don't know"/>
                         <label for ="don't know"> Legal guardian </label>
                         &emsp;&emsp;&emsp;
-                        <input type ="radio" id ="relationship" name ="Don't Know" value ="don't know"/>
-                        <label for ="don't know"> Others </label> &nbsp &nbsp &emsp;&emsp; &emsp;Specify ______________
+                        <input type ="radio" id ="relationship" name ="Self" value ="don't know"/>
+                        <label for ="don't know"> Others </label> &nbsp; &nbsp; &emsp;&emsp; &emsp;Specify ________________________
                         </div>
                         
-                            <table border ="1">
+                            <table style="width: 100%">
                                 
                             <tr>
-                                <th> Do not write below the line (For SSA use only) </td>
-                            
+                                <th colspan="8" style= "text-align: left" > Do not write below the line (For SSA use only) </td>
+                                </tr>
                             <tr>
-                            <th> NPN &nbsp </th>
-                            <th> DOC </th>
-                            <th> NTI </th>
-                            <th> CAN </th>
-                            <th> ITV </th>
+                            <td colspan="4" style="text-align: left"> NPC </td>
+                            <td style="text-align: left"> DOC </td>
+                            <td style="text-align: left"> NTI </td>
+                            <td style="text-align: left"> CAN </td>
+                            <td style="text-align: left"> ITV </td>
                             </tr>
 
                             <tr>
-                                <td> PBC </td>
-                                <th>    EVI   </th>
-                                 <th>   EVA   </th>  
-                                 <th>   EVC   </th>
-                                 <th>   PRA   </th>
-                                 <th>   NWR   </th>
-                                 <th>   DNR   </th>
-                                 <th>   UNIT  </th>
+                                 <td style="text-align: left">   PBC </td>
+                                 <td style="text-align: left">   EVI   </td>
+                                 <td style="text-align: left">   EVA   </td>  
+                                 <td style="text-align: left">   EVC   </td>
+                                 <td style="text-align: left">   PRA   </td>
+                                 <td style="text-align: left">   NWR   </td>
+                                 <td style="text-align: left">   DNR   </td>
+                                 <td style="text-align: left">   UNIT  </td>
                             </tr> 
+
+                            <tr>
+
+                                <td rowspan="3" colspan="6" style="text-align: left"> EVIDENCE SUBMITTED </td>
+                                <td colspan="3" style= font-size:13px> SIGNATURE AND TITLE OF EMPLOYEE(S) REVIEWING 
+                                EVIDENCE AND/OR CONDUCTING INTERVIEW </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Date</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" style="text-align: left"> DCL &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; Date</td>
+                            </tr>
+
                         </table>
+                        Form SS-5 (08-2011) ef (08-2011) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Destroy Prior Editions&emsp;&emsp;&emsp;&emsp;&emsp; Page5
                     
 
 
