@@ -2,11 +2,11 @@
 <html lang = "en">
 <head> 
     <meta charset ="utf-8"/>
-    <title> SSN Form </title>           <!-- Title that'll appear on the browser--!>
+    <title> SSN Form </title>           
 
 </head>
 <body> 
-    <header>                          <!-- heading and title, logo, etc --!> 
+    <header>                          
         <h1> SOCIAL SECURITY ADMINISTRATION </h1>
         <h2> Application for a Social Security Card </h2>
         <h3 align = "right" style ="font-size:20%"> Form Approved </h3>
@@ -59,13 +59,15 @@
             <li>Social Security Number previously assigned to the person <br> listed in item 1</br></li>
         
         <hr>
-            <li> <b> PLACE OF BIRTH </b>  <li> <b> DATE OF BIRTH </b> </li>  
+        <div>
+            <li> <b> PLACE OF BIRTH  ___________________</b> </li>
+            
+             <li> <b> DATE OF BIRTH </b> </li> 
+           
                 <hr>
                 <div>
               <li> <b> CITIZENSHIP </b>  <input type ="checkbox" id ="U.S. Citizen" name ="Citizenship" value = "Citizen Name "/> 
                   <label for ="U.S Citizen name"> U.S Citizen Name </label>
-              
-            
         
                   <input type ="checkbox" id = "Legal Alien Allowed To Work" name ="Citizenship" value = "Legal Alien Allowed To Work"/>
                   <label for ="Legal Alien Allowed To Work"> Legal Alien Allowed To Work </label>
@@ -73,19 +75,122 @@
                   <input type ="checkbox" id ="Legal Alien Not allowed to work" name ="Citizenship" value ="Legal Alien <b> Not </b> allowed to work"/>
                   <label for "Legal Alien Not allowed to work"> Legal Alien <b> Not </b> allowed to work(See instructions on page 3)</label>
 
-                  <input type="checkbox" id="Other" name"Other" value ="Other"/>
+                  <input type="radio" id="Other" name"Other" value ="Other"/>
                 <label for ="Other"> Other (See instructions on page 3) </label>
               </li>
               <hr>
               <li> <b> ETHNICITY </b> <br> Are you Hispanic or Latino?(Your Response is Voluntary)</br>
                 <br> 
-                <input type ="checkbox" id="Yes" name="yes" value="yes"/>
+                <input type ="radio" id="Yes" name="yes" value="yes"/>
                 <label for ="yes"> Yes </label>
 
-                <input type ="checkbox" id ="NO" name="No" value="No"/>
-                <label for ="No"> No </label> 
-            </li>
-            <hr>
+                <input type ="radio" id ="NO" name="yes" value="No"/>
+                <label for ="No"> No </label>
+                <hr>
+                 <li> <b> RACE</b> </li>
+                 <hr>
+                 <li> <b>SEX </b> &nbsp 
+                    <input type="radio" id ="Male" name="Male" value ="Male"/>
+                    <label for ="Male"> Male </label> &nbsp
+
+                    <input type ="radio" id="Female" name ="Female" value ="Female"/>
+                    <label for ="Female"> Female </label> 
+                    <hr>
+                    <li>
+                    <ol type ="A">
+                        <li> <b> PARENT/MOTHER'S</b> <br> <b> AT HER BIRTH </b> </br> </li>
+                        <hr>
+                        
+                        <li> <b> PARENT/MOTHER'S SOCIAL <br> SECURITY NUMBER </b> <sub> (See instructions for 9B on Page 3)</sub> </li>
+
+                    </ol>
+                </li>
+                    <hr>
+                    <li>
+                        <ol type ="A">
+                            <li> <b> PARENT/FATHER'S <br> NAME </br> </b> </li>
+                                <hr>
+                            <li> <b> PARENT/FATHER'S SOCIAL <br> SECURITY NUMBER </b><sub> (See instructions for 10B on Page 3)</sub>    
+                            
+                            </ol>
+                        </li>  
+                        <hr>          
+                     <li> Has the person listed in item 1 or anyone acting on his/her behalf ever filed for or received a Social Security Number <br> Card before? </br>
+                        
+                        <input type ="radio" id="yes" name ="Yes" value ="yes"/>
+                        <label for ="Yes"> Yes (if "yes" answer question 12-13) </label> &nbsp
+
+                        <input type ="radio" id ="No" name ="no" value ="No"/>
+                        <label for ="No"> No </label> &nbsp
+
+                        <input type ="radio" id ="Don't know" name ="Don't Know" value ="don't know" checked/>
+                        <label for ="don't know"> Don't Know (If "Don't know",skip to question 14) </label>
+                     
+                     </li>
+
+                        
+                     <hr>
+                    
+                        <li> Name shown on the most recent <br> Social security card issued for the person<br> listed in item 1 </br> </li>
+                        <hr>
+                        <li> Enter any other date of birth if used on an <br> earlier application for a card </br>  </li>
+                        <hr>
+                        <li> <b> TODAY'S <br> DATE </br> </b> </li>
+                        <hr>
+                        <li> <b> DAYTIME PHONE <br> NUMBER </b> </br> </li>
+                        <hr>
+                        <li> <b> MAILING ADDRESS <br> </b> (Do not abbreviate) </br> </li>
+                        <hr>
+                        <div>
+                        <li> <b> I declare under penalty of perjury that I have examined all the information on this form, and on any accompanying statements or forms,<br> and it is true and correct to the best to my knowledge.</br>
+                            <hr> YOUR SIGNATURE </b> </li>
+                        <hr>    
+
+                        <li> <b> YOUR RELATIONSHIP TO THE PERSON IN ITEM 1 IS </b> </li>
+
+                        <input type ="radio" id ="Self" name ="Self" value ="Self"/>
+                        <label for ="Self"> Self </label>
+
+                        <input type ="radio" id ="Don't know" name ="Don't Know" value ="don't know"/>
+                        <label for ="don't know"> Natural or adoptive parent </label>
+
+                        <input type ="radio" id ="Don't know" name ="Don't Know" value ="don't know"/>
+                        <label for ="don't know"> Legal guardian </label>
+
+                        <input type ="radio" id ="Don't know" name ="Don't Know" value ="don't know"/>
+                        <label for ="don't know"> Others </label> &nbsp &nbsp Specify ______________
+
+                        </div>
+            
+                        
+                            <table border ="1">
+                                
+                            <tr>
+                                <th> Do not write below the line (For SSA use only) </td>
+                            
+                            <tr>
+                            <th> NPN &nbsp </th>
+                            <th> DOC </th>
+                            <th> NTI </th>
+                            <th> CAN </th>
+                            <th> ITV </th>
+                            </tr>
+
+                            <tr>
+                                <td> PBC </td>
+                                <th>    EVI   </th>
+                                 <th>   EVA   </th>  
+                                 <th>   EVC   </th>
+                                 <th>   PRA   </th>
+                                 <th>   NWR   </th>
+                                 <th>   DNR   </th>
+                                 <th>   UNIT  </th>
+                            </tr> 
+                        </table>
+                    
+
+
+            
 
 
     
