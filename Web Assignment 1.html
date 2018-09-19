@@ -5,6 +5,24 @@
     <title> SSN Form </title>           
 
 </head>
+<style>
+.my-container { width: 500px; margin-left: auto; margin-right: auto; border: none; } 
+         .h1-header { font-family: 'Segoe UI'; font-size: 1.650em; color: #777777; font-weight: normal; padding: 0px 15px 10px 15px; text-align: center; }
+         .header { font-family: 'Segoe UI'; font-size: 1.125em; color: #777777; font-weight: normal; padding: 0px 15px; text-align: center; border: none; }
+         .color-gray { color: #7a7a7a; }
+         .padding-left-and-right-five-px { padding-left: 5px; padding-right: 5px; }
+         .social-security-question { font-family: 'Segoe UI'; font-size: 1.286em !important; color: #777777; font-weight: normal; padding: 0px 5px; text-align: center; }
+         .center-text { text-align: center; margin-top: 10px;}
+         #SSNArea { font-weight: normal; font-family: 'Segoe UI'; font-size: 20px; text-align: center; width: 130px; min-width: 85px; display: inline; }
+         #SSNGroup { font-weight: normal; font-family: 'Segoe UI'; font-size: 20px; text-align: center; width: 125px; min-width: 65px; display: inline; }
+         #SSNSerial { font-weight: normal; font-family: 'Segoe UI'; font-size: 20px; text-align: center; width: 130px; min-width: 85px; display: inline; }
+         input#SSNGroup, input#SSNArea, input#SSNSerial {
+              border: 1px solid black;
+              height: 30px;
+          }
+
+
+</style>
 <body> 
     <header>                          
         <h1> SOCIAL SECURITY ADMINISTRATION </h1>
@@ -17,151 +35,270 @@
 
            <ol>
                
-             <li> <b> NAME </b> </li> &nbsp 
+             <li> <b> NAME </b><br> <sub>(To be shown on Card) &emsp;&emsp;&emsp;&emsp;
+                &nbsp;
+                
+                        
+                       
+                 <input type ="text" name "First" style ="font-size:15px" /> &nbsp
+                            <sup> Full Middle Name </sup>
+                            &nbsp;
             
+                 <input type ="text" name "full middle name" style ="font-size:15px"/>  &nbsp
+                          <sup>  Last Name </sup> 
+                          &nbsp;
+                        
+                <input type = "text" name "Last Name" style ="font-size:15px"/> </b> </li>
+            </sub></br>  
            
            
-    <input type ="text" name = "NAME"/> &nbsp
-    &nbsp
-            <sup> First </sup>
-            &nbsp
-            
-           
-     <input type ="text" name "First"/> &nbsp
-                <sup> Full Middle Name </sup>
-                &nbsp
-
-     <input type ="text" name "full middle name"/>  &nbsp
-              <sup>  Last Name </sup> 
-              &nbsp
-
-    <input type = "text" name "Last Name"/>
+    
           <br>  </br>
-    FULL NAME AT BIRTH &nbsp
-    <input type ="text" name "Full Name at Birth"/>
-    &nbsp
-    <sup> First </sup>
-            &nbsp
-    <input type ="text" name "First"/> &nbsp
-                <sup> Full Middle Name </sup>
-                &nbsp
+   FULL NAME AT BIRTH &emsp;
+    <input type ="text" name "Full Name at Birth" style ="font-size:15px"/>
+    
+    <sup> &emsp;First </sup>
+            
+    <input type ="text" name "First" style ="font-size:15px"/> &nbsp;
+                <sup> &emsp;&emsp;Full Middle Name </sup>
+                
 
-     <input type ="text" name "full middle name"/>  &nbsp
-              <sup>  Last Name </sup> 
-              &nbsp
+     <input type ="text" name "full middle name" style ="font-size:15px"/>
+              <sup> &emsp;Last Name </sup> 
               
-    <input type = "text" name "Last Name"/>
+              
+    <input type = "text" name "Last Name" style ="font-size:15px"/>
           <br>  </br>
-      OTHER NAMES
-    <input type ="text" name "Other Names"/>
+    <sup>OTHER NAMES</sup> &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+    <input type ="text" name "Other Names" style ="font-size:15px"/>
 <hr>
     
             <li>Social Security Number previously assigned to the person <br> listed in item 1</br></li>
-        
+
+            <div class="my-container">
+                <div class="center-text">
+                   <input type="number" id="SSN1" class="form-control input-group" maxlength="3" placeholder="XXX" required /><span class=3"color-gray padding-left-and-right-five-px" >-</span>
+                   <input type="number" id="SSN2" class="form-control input-group" maxlength="2" placeholder="XX" required /><span class=3"color-gray padding-left-and-right-five-px">-</span>
+                   <input type="number" id="SSN3" class="form-control input-group" maxlength="3" placeholder="XXX" required />
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+
+         
         <hr>
         <div>
-            <li> <b> PLACE OF BIRTH  ___________________</b> </li>
+            <li> <b> PLACE OF BIRTH &emsp;<input type ="text" id="name" name ="name" placeholder="Full Middle Name" style ="font-size:15px"><br>(Do not abbreviate) </b> </br>  
+           <hr> 
+                <li> <b> DATE OF BIRTH </b> &emsp; </li> </b>
+                
+                <input type ="date" name ="date" style ="font-size:15px"></li>
             
-             <li> <b> DATE OF BIRTH </b> </li> 
+            </b>
            
                 <hr>
                 <div>
-              <li> <b> CITIZENSHIP </b>  <input type ="checkbox" id ="U.S. Citizen" name ="Citizenship" value = "Citizen Name "/> 
+              <li> <b> CITIZENSHIP &nbsp; &nbsp; &nbsp; &nbsp </b>  <input type ="radio" id ="U.S. Citizen" name ="Citizenship" value = "Citizen Name "/> 
                   <label for ="U.S Citizen name"> U.S Citizen Name </label>
-        
-                  <input type ="checkbox" id = "Legal Alien Allowed To Work" name ="Citizenship" value = "Legal Alien Allowed To Work"/>
+                  &nbsp; &nbsp; &nbsp;
+                  <input type ="radio" id = "Legal Alien Allowed To Work" name ="Citizenship" value = "Legal Alien Allowed To Work"/>
                   <label for ="Legal Alien Allowed To Work"> Legal Alien Allowed To Work </label>
-                  
-                  <input type ="checkbox" id ="Legal Alien Not allowed to work" name ="Citizenship" value ="Legal Alien <b> Not </b> allowed to work"/>
+                  &nbsp; &nbsp; &nbsp;
+                  <input type ="radio" id ="Legal Alien Not allowed to work" name ="Citizenship" value ="Legal Alien <b> Not </b> allowed to work"/>
                   <label for "Legal Alien Not allowed to work"> Legal Alien <b> Not </b> allowed to work(See instructions on page 3)</label>
-
-                  <input type="radio" id="Other" name"Other" value ="Other"/>
+                &nbsp; &nbsp; &nbsp;
+                  <input type="radio" id="Other" name"Citizenship" value ="Other"/>
                 <label for ="Other"> Other (See instructions on page 3) </label>
               </li>
               <hr>
-              <li> <b> ETHNICITY </b> <br> Are you Hispanic or Latino?(Your Response is Voluntary)</br>
-                <br> 
-                <input type ="radio" id="Yes" name="yes" value="yes"/>
+              <li> <b> ETHNICITY </b> <br> Are you Hispanic or Latino?(Your Response is Voluntary)
+                &emsp; &emsp; <input type ="radio" id="Yes" name="yes" value="yes"/>
                 <label for ="yes"> Yes </label>
 
-                <input type ="radio" id ="NO" name="yes" value="No"/>
+                &emsp; &emsp; <input type ="radio" id ="NO" name="yes" value="No"/>
                 <label for ="No"> No </label>
+            
+            </br>
+                <br> 
+                
                 <hr>
-                 <li> <b> RACE</b> </li>
+                 <li> <b> RACE</b> 
+                
+                    &emsp; &emsp;<input type="radio" id ="race" name="Male" value ="Male"/>
+                    <label for ="Male"> Native Hawaiian </label> &nbsp
+
+                    &emsp; &emsp;<input type="radio" id ="race" name="Male" value ="Male"/>
+                    <label for ="Male"> Alaska Native </label> &nbsp
+
+                    &emsp; &emsp;<input type="radio" id ="race" name="Male" value ="Male"/>
+                    <label for ="Male"> Asian </label> &nbsp 
+                    <br> </br>
+
+                    &emsp; &emsp;&emsp; &emsp;&ensp;<input type="radio" id ="race" name="Male" value ="Male"/>
+                    <label for ="Male"> American Indian</label> &nbsp
+
+                    &emsp; &emsp;<input type="radio" id ="race" name="Male" value ="Male"/>
+                    <label for ="Male"> Black/African American</label> &nbsp
+
+                    &emsp; <input type="radio" id ="race" name="Male" value ="Male"/>
+                    <label for ="Male"> Other Pacific Islander </label> &nbsp
+
+                    &emsp;<input type="radio" id ="race" name="Male" value ="Male"/>
+                    <label for ="Male"> White </label> &nbsp
+                
+                
+                
+                </li>
                  <hr>
-                 <li> <b>SEX </b> &nbsp 
+                 <li> <b>SEX  &emsp; &emsp; </b> &nbsp 
                     <input type="radio" id ="Male" name="Male" value ="Male"/>
                     <label for ="Male"> Male </label> &nbsp
-
-                    <input type ="radio" id="Female" name ="Female" value ="Female"/>
+                    &emsp; &emsp; &emsp;&emsp;&emsp; &emsp;
+                    <input type ="radio" id="Male" name ="Male" value ="Female"/>
                     <label for ="Female"> Female </label> 
                     <hr>
                     <li>
                     <ol type ="A">
-                        <li> <b> PARENT/MOTHER'S</b> <br> <b> AT HER BIRTH </b> </br> </li>
+                        <li> <b> PARENT/MOTHER'S &emsp;&emsp;&emsp;&emsp; 
+                            <input type ="text" id="name" name ="name" placeholder="First Name" style ="font-size:15px"> &emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;
+                            <input type ="text" id="name" name ="name" placeholder="Full Middle Name" style ="font-size:15px"> &emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;
+                            <input type ="text" id="name" name ="name" placeholder="Last Name" style ="font-size:15px"></b> <br> <b> NAME AT HER BIRTH </b> 
+                            
+                        
+                        
+                        </li>
                         <hr>
                         
-                        <li> <b> PARENT/MOTHER'S SOCIAL <br> SECURITY NUMBER </b> <sub> (See instructions for 9B on Page 3)</sub> </li>
+                        <li> <b> PARENT/MOTHER'S SOCIAL <br> SECURITY NUMBER </b> <sub> (See instructions for 9B on Page 3)</sub>
+                        
+                        
+                        </li>
+
+                        
 
                     </ol>
                 </li>
+                <div class="my-container">
+                    <div class="center-text">
+                       <input type="number" id="SSN1" class="form-control input-group" maxlength="2" placeholder="XXX" required /><span class="color-gray padding-left-and-right-five-px">-</span>
+                       <input type="number" id="SSN2" class="form-control input-group" maxlength="2" placeholder="XX" required /><span class="color-gray padding-left-and-right-five-px">-</span>
+                       <input type="number" id="SSN3" class="form-control input-group" maxlength="2" placeholder="XXX" required />
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
                     <hr>
                     <li>
                         <ol type ="A">
-                            <li> <b> PARENT/FATHER'S <br> NAME </br> </b> </li>
+                            <li> <b> PARENT/FATHER'S &emsp;&emsp;&emsp;&emsp; 
+                                <input type ="text" id="name" name ="name" placeholder="First Name" style ="font-size:15px"> &emsp;&emsp;&emsp;
+                                &emsp;&emsp;&emsp;&emsp;
+
+                                <input type ="text" id="name" name ="name" placeholder="Full Middle Name"style ="font-size:15px"> &emsp;&emsp;&emsp;&emsp;
+                                &emsp;&emsp;&emsp;&emsp;
+                                <input type ="text" id="name" name ="name" placeholder="Last Name" style ="font-size:15px"><br> NAME 
+                            
+                            
+                            </li>
                                 <hr>
                             <li> <b> PARENT/FATHER'S SOCIAL <br> SECURITY NUMBER </b><sub> (See instructions for 10B on Page 3)</sub>    
                             
                             </ol>
-                        </li>  
+                        </li> 
+                        
+                        <div class="my-container">
+                            <div class="center-text">
+                               <input type="number" id="SSN1" class="form-control input-group" maxlength="2" placeholder="XXX" required /><span class="color-gray padding-left-and-right-five-px">-</span>
+                               <input type="number" id="SSN2" class="form-control input-group" maxlength="2" placeholder="XX" required /><span class="color-gray padding-left-and-right-five-px">-</span>
+                               <input type="number" id="SSN3" class="form-control input-group" maxlength="2" placeholder="XXX" required />
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
                         <hr>          
                      <li> Has the person listed in item 1 or anyone acting on his/her behalf ever filed for or received a Social Security Number <br> Card before? </br>
                         
-                        <input type ="radio" id="yes" name ="Yes" value ="yes"/>
+                        <input type ="radio" id="person" name ="Yes" value ="yes"/>
                         <label for ="Yes"> Yes (if "yes" answer question 12-13) </label> &nbsp
 
-                        <input type ="radio" id ="No" name ="no" value ="No"/>
-                        <label for ="No"> No </label> &nbsp
+                        <input type ="radio" id ="person" name ="yes" value ="no"/>
+                        <label for ="yes"> No </label> &nbsp
 
-                        <input type ="radio" id ="Don't know" name ="Don't Know" value ="don't know" checked/>
-                        <label for ="don't know"> Don't Know (If "Don't know",skip to question 14) </label>
+                        <input type ="radio" id ="person" name ="yes" value ="don't know" checked/>
+                        <label for ="yes"> Don't Know (If  "Don't know",skip to question 14) </label>
                      
                      </li>
 
                         
                      <hr>
                     
-                        <li> Name shown on the most recent <br> Social security card issued for the person<br> listed in item 1 </br> </li>
+                        <li> Name shown on the most recent &emsp;&emsp;&emsp;&emsp; 
+                            
+                            <input type ="text" id="name" name ="name" placeholder="First Name" style ="font-size:15px"> &emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;
+                            <input type ="text" id="name" name ="name" placeholder="Full Middle Name" style ="font-size:15px"> &emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;<input type ="text" id="name" name ="name" placeholder="Last Name" style ="font-size:15px" >
+                            
+                            <br> Social security card issued for the person<br> listed in item 1 </br> </li>
                         <hr>
-                        <li> Enter any other date of birth if used on an <br> earlier application for a card </br>  </li>
+                        <li> Enter any other date of birth if used on an &emsp; &emsp; &emsp; &emsp; &emsp; <input type ="date" name ="date" style ="font-size:15px">  <br> earlier application for a card </br> 
+                            
+                        
+                        </li>
                         <hr>
-                        <li> <b> TODAY'S <br> DATE </br> </b> </li>
+                        <li> <b> TODAY'S </b> &emsp; &emsp; &emsp; &emsp; &emsp; 
+                            
+                            <input type ="date" name ="date" style ="font-size:15px"><br> DATE </br> </li>
                         <hr>
-                        <li> <b> DAYTIME PHONE <br> NUMBER </b> </br> </li>
+                        <li> <b> DAYTIME PHONE &emsp;&emsp;&emsp;&emsp;&emsp;</b>
+                            
+                            <input type ="text" id="phone" name ="phone" placeholder="Area Code" style ="font-size:15px"> &emsp;&emsp;&emsp;&emsp;&emsp;
+                            <input type ="text" id="phone" name ="phone" placeholder="Number"style ="font-size:15px">
+                            <br> <b> NUMBER </b> </br> </li>
                         <hr>
-                        <li> <b> MAILING ADDRESS <br> </b> (Do not abbreviate) </br> </li>
+                        <li> <b> MAILING ADDRESS &emsp;&emsp;&emsp;&emsp;&emsp;
+                                <input type ="text" id="Street Address, Apt. No., PO Box, Rural Route No" name ="Street Address, Apt. No., PO Box, Rural Route No" placeholder="Street Address, Apt. No., PO Box, Rural Route No" style ="font-size:15px">
+                                &emsp;&emsp;&emsp;&emsp;&emsp;
+                                <input type ="text" id="State" name ="State" placeholder="state" style ="font-size:15px">
+                                &emsp;&emsp;&emsp;&emsp;&emsp;
+                                <input type ="text" id="City" name ="City" placeholder="City" style ="font-size:15px">
+                                &emsp;&emsp;&emsp;&emsp;&emsp;
+                                <input type ="text" id="Zip Code" name ="City" placeholder="Zip Code" style ="font-size:15px">
+
+                                
+                            
+                            
+                            <br> </b> (Do not abbreviate) </br> </li>
                         <hr>
                         <div>
                         <li> <b> I declare under penalty of perjury that I have examined all the information on this form, and on any accompanying statements or forms,<br> and it is true and correct to the best to my knowledge.</br>
                             <hr> YOUR SIGNATURE </b> </li>
                         <hr>    
 
-                        <li> <b> YOUR RELATIONSHIP TO THE PERSON IN ITEM 1 IS </b> </li>
-
-                        <input type ="radio" id ="Self" name ="Self" value ="Self"/>
+                        <li> <b> YOUR RELATIONSHIP TO THE PERSON IN ITEM 1 IS </b> <br> </li></br></li>
+                        
+                        </b>
+                        
+                        <input type ="radio" id ="relationship" name ="Self" value ="Self"/>
                         <label for ="Self"> Self </label>
-
-                        <input type ="radio" id ="Don't know" name ="Don't Know" value ="don't know"/>
+                        &emsp;&emsp;&emsp;
+                        <input type ="radio" id ="relationship" name ="Don't Know" value ="don't know"/>
                         <label for ="don't know"> Natural or adoptive parent </label>
-
-                        <input type ="radio" id ="Don't know" name ="Don't Know" value ="don't know"/>
+                        &emsp;&emsp;&emsp;
+                        <input type ="radio" id ="relationship" name ="Don't Know" value ="don't know"/>
                         <label for ="don't know"> Legal guardian </label>
-
-                        <input type ="radio" id ="Don't know" name ="Don't Know" value ="don't know"/>
-                        <label for ="don't know"> Others </label> &nbsp &nbsp Specify ______________
-
+                        &emsp;&emsp;&emsp;
+                        <input type ="radio" id ="relationship" name ="Don't Know" value ="don't know"/>
+                        <label for ="don't know"> Others </label> &nbsp &nbsp &emsp;&emsp; &emsp;Specify ______________
                         </div>
-            
                         
                             <table border ="1">
                                 
